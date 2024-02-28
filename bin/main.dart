@@ -10,7 +10,7 @@ Future<void> main(List<String> arguments) async {
   final city = arguments.first;
   final api = WeatherApiClient();
   try {
-    final weather = await api.getWeather(city);
+    final weather = await api.fetchWeather(city);
     print(weather);
   } on WeatherApiException catch (e) {
     print(e.message);
