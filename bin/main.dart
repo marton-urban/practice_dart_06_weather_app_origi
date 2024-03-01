@@ -4,8 +4,8 @@ import 'weather_api_client.dart';
 
 Future<void> main(List<String> arguments) async {
   late final String city;
+  // print('Syntax: dart bin/main.dart London');
   if (arguments.length != 1) {
-    print('Syntax: dart bin/main.dart London');
     city = 'London';
   } else {
     city = arguments.first;
